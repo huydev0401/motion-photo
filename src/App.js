@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 import { useCursor } from "./context/CursorContext";
 
 const App = () => {
+  //template: https://github.com/cristianmihai01/photography-starter.git
   const { cursorVariants, cursorBG } = useCursor();
   console.log(useCursor());
   console.log(cursorVariants);
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <Router>
         <Header />
         <AnimRoutes />
